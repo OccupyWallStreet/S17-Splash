@@ -1,0 +1,278 @@
+/*	Less Framework 4
+	http://lessframework.com
+	by Joni Korpi
+	License: http://opensource.org/licenses/mit-license.php	*/
+
+
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+
+
+/*	Typography presets
+	------------------	*/
+
+	h1,h2,h3,h4,.gigantic,.huge,.large,.bigger,.big { font-family: 'Oswald', sans-serif; font-weight: 400; margin-bottom: 24px; text-transform: uppercase; }
+
+.gigantic {
+	font-size: 110px;
+	line-height: 120px;
+	letter-spacing: -2px;
+}
+
+.huge, h1 {
+	font-size: 68px;
+	line-height: 72px;
+	letter-spacing: -1px;
+}
+
+.large, h2 {
+	font-size: 42px;
+	line-height: 48px;
+}
+
+.bigger, h3 {
+	font-size: 26px;
+	line-height: 36px;
+}
+
+.big, h4 {
+	font-size: 22px;
+	line-height: 30px;
+}
+
+body {
+	font: 16px/24px Georgia, serif;
+}
+
+.small, small {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+/* Selection colours (easy to forget) */
+
+::selection 	 	{background: rgb(255,255,158);}
+::-moz-selection 	{background: rgb(255,255,158);}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}
+
+html { background: url(http://s17nyc.org/wp-content/themes/responsepro-childtheme/img/groovepaper.png);}
+
+/* COLORS (for reference) */
+
+.black {color: #333333;}
+.red {color: #f8083b;}
+.plum {color: #b41e8e;}
+.navy {color: #486cb0;}
+.cyan {color: #00bfec;}
+.sky {color: #73E7F5;}
+.jade {color: #4ba684;}
+.mint {color: #57d9a9;}
+.sun {color: #ffe066;}
+.gold {color: #ffcc00;}
+
+a {color: #00bfec;}
+a:hover {color: #486cb0;}
+
+input[type="submit"], .fancyBtn, a.fancyBtn {
+	font-family: Oswald, 'Open Sans', sans-serif!important;
+	background: #486cb0;
+	-webkit-box-shadow: 0px 2px 3px 0px #BBB;
+	-moz-box-shadow: 0px 2px 3px 0px #BBB;
+	box-shadow: 0px 2px 3px 0px #BBB;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	color: #FFF;
+	padding: 7px 20px 8px;
+	border: 0;
+	font-size: 14px;
+	font-weight: normal;
+	text-shadow: none;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+
+a.fancyBtn, .btnActive {
+	background-color: #c62d1f;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f24537), to(#c62d1f));
+	background-image: -webkit-linear-gradient(top, #f24537, #c62d1f);
+	background-image:    -moz-linear-gradient(top, #f24537, #c62d1f);
+	background-image:      -o-linear-gradient(top, #f24537, #c62d1f);
+	background-image:         linear-gradient(to bottom, #f24537, #c62d1f);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f');
+	color:#FFFFFF !important;
+}
+
+input[type="submit"]:hover,
+.fancyBtn:hover,
+.fancyBtn:active {
+	box-shadow: 0px 2px 5px #666;
+}
+
+a.shadowbtn,
+a.imgLink{
+	display:block;
+	margin-bottom: .5em;
+}
+
+.imgLink img,
+.shadowbtn img{
+	display: block;
+}
+
+h2.hugebtn{
+	background: #000;
+	border-radius: 4px;
+	box-shadow: 1px 1px 3px #999;
+	padding: .5em .5em;
+	position: relative;
+	left: -.5em;
+}
+
+h2.hugebtn:hover{
+	box-shadow: 2px 2px 5px #666;
+}
+
+.hugebtn a{
+	display:block;
+	color:#fc0;
+}
+
+.shadowbtn img:hover{
+	box-shadow: 2px 2px 5px #666;
+}
+
+
+.registerBtn {
+	background: #f8083b;
+	padding: 10px 60px!important;
+	font-size: 20px!important;
+	margin: 0 40px 14px;
+    /* cross-browser inline-block */
+    display:-moz-inline-stack;
+    display:inline-block;
+    zoom:1;
+    *display:inline;
+}
+
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	width: 896px;
+	margin:0 auto;
+	padding: 24px 48px 84px;
+	color: rgb(60,60,60);
+	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+}
+
+.left { float: left; }
+.right { float: right; }
+.clear { clear:both; }
+
+nav .big { 
+  float: left;
+  margin: 15px 0 0;
+}
+
+nav .big a { margin-left:10px; }
+
+#callout_text h4 { margin:0; }
+#callout_text { margin-bottom:24px; }
+
+.column {
+	float: left;
+}
+
+.column.three {
+	margin-right:24px;
+	width:282px;
+}
+
+.column.last {
+	margin-right:0;
+}
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	body {
+		width: 712px;
+		padding: 48px 28px 60px;
+	}
+}
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+	
+	body {
+		width: 252px;
+		padding: 48px 34px 60px;
+	}
+	
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	body {
+		width: 436px;
+		padding: 36px 22px 48px;
+	}
+	
+}
